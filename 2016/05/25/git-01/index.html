@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="git," />
 
 
 
@@ -93,16 +93,18 @@
 
 
 
-<meta name="description" content="懂设计 会生活 爱编程的欧巴桑">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yan yan">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="安装gitmsysgit是Windows版的Git，从https://git-for-windows.github.io下载（网速慢的同学请移步国内镜像），然后按默认选项安装即可。 安装完成后，在开始菜单里找到“Git”-&amp;gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！ 安装完成后，还需要最后一步设置，在命令行输入：1$ git config --global u">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git基本操作">
+<meta property="og:url" content="http://yoursite.com/2016/05/25/git-01/index.html">
 <meta property="og:site_name" content="yan yan">
-<meta property="og:description" content="懂设计 会生活 爱编程的欧巴桑">
+<meta property="og:description" content="安装gitmsysgit是Windows版的Git，从https://git-for-windows.github.io下载（网速慢的同学请移步国内镜像），然后按默认选项安装即可。 安装完成后，在开始菜单里找到“Git”-&amp;gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！ 安装完成后，还需要最后一步设置，在命令行输入：1$ git config --global u">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-07-25T06:08:25.864Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yan yan">
-<meta name="twitter:description" content="懂设计 会生活 爱编程的欧巴桑">
+<meta name="twitter:title" content="git基本操作">
+<meta name="twitter:description" content="安装gitmsysgit是Windows版的Git，从https://git-for-windows.github.io下载（网速慢的同学请移步国内镜像），然后按默认选项安装即可。 安装完成后，在开始菜单里找到“Git”-&amp;gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！ 安装完成后，还需要最后一步设置，在命令行输入：1$ git config --global u">
 
 
 
@@ -130,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/05/25/git-01/"/>
 
 
 
 
 
-  <title>yan yan</title>
+  <title>git基本操作 | yan yan</title>
   
 
 
@@ -161,9 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,9 +266,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -294,9 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/05/25/git-01/" itemprop="url">git基本操作</a></h1>
+          <h1 class="post-title" itemprop="name headline">git基本操作</h1>
         
 
         <div class="post-meta">
@@ -365,9 +363,7 @@
       
 
       
-        
-          
-            <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>msysgit是Windows版的Git，从<a href="https://git-for-windows.github.io" target="_blank" rel="external">https://git-for-windows.github.io</a>下载（网速慢的同学请移步<a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fgit" target="_blank" rel="external">国内镜像</a>），然后按默认选项安装即可。</p>
+        <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>msysgit是Windows版的Git，从<a href="https://git-for-windows.github.io" target="_blank" rel="external">https://git-for-windows.github.io</a>下载（网速慢的同学请移步<a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fgit" target="_blank" rel="external">国内镜像</a>），然后按默认选项安装即可。</p>
 <p>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</p>
 <p>安装完成后，还需要最后一步设置，在命令行输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"Your Name"</span></div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.email <span class="string">"email@example.com"</span></div></pre></td></tr></table></figure>
@@ -389,42 +385,56 @@
 <h2 id="git-clone-从远程库克隆"><a href="#git-clone-从远程库克隆" class="headerlink" title="git clone 从远程库克隆"></a>git clone 从远程库克隆</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:yy27/yy27.git</div></pre></td></tr></table></figure>
 <p>Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag"># git</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -432,6 +442,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -452,8 +466,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/icon.png"
@@ -515,6 +538,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装git"><span class="nav-number">1.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-init-创建版本库"><span class="nav-number">2.</span> <span class="nav-text">git init 创建版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加文件到仓库"><span class="nav-number">3.</span> <span class="nav-text">添加文件到仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-add-添加文件"><span class="nav-number">3.1.</span> <span class="nav-text">git add 添加文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-commit-提交到仓库"><span class="nav-number">3.2.</span> <span class="nav-text">git commit 提交到仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push-添加到远程库"><span class="nav-number">4.</span> <span class="nav-text">git push 添加到远程库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH警告"><span class="nav-number">4.1.</span> <span class="nav-text">SSH警告</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-clone-从远程库克隆"><span class="nav-number">5.</span> <span class="nav-text">git clone 从远程库克隆</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -628,10 +667,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
