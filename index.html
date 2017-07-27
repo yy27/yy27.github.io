@@ -277,6 +277,417 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/27/node-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/icon.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yan yan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/27/node-01/" itemprop="url">nodejs+express修改代码不用重启</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-27T14:25:59+08:00">
+                2017-07-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/NodeJs/" itemprop="url" rel="index">
+                    <span itemprop="name">NodeJs</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在开发或调试Node.js应用程序的时候，当你修改js文件后，总是要按下CTRL+C终止程序，然后再重新启动，即使是修改一点小小的参数，也 总是要不断地重复这几个很烦人的操作。这是因为Node.js 只有在第一次引用到某部份时才会去解析脚 本文件，以后都会直接访问内存，避免重复载入。</p>
+<p>Node.js的这种设计虽然有利于提高性能，却不利于开发调试，因为我们在开发过程中总是希望修改后立即看到效果，而不是每次都要终止进程并重启。</p>
+<p>supervisor 可以帮助你实现这个功能，它会监视你对代码的改动，并自动重启Node.js。 根据Github上的说明，Node Supervisor原本是用于服务器上Node.js应用崩溃的时候，自己重新启动。当然它也可以监控你的项目的js（或CoffeeScript）文件变化，进而重启来方便我们调试应用程序。</p>
+<h2 id="安装方法（以全局模块安装）："><a href="#安装方法（以全局模块安装）：" class="headerlink" title="安装方法（以全局模块安装）："></a>安装方法（以全局模块安装）：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install supervisor -g</div></pre></td></tr></table></figure>
+<p>如果你使用的是Linux 或Mac，直接键入上面的命令很可能会有权限错误。原因是npm 需要把supervisor 安装到系统目录，需要管理员授权，<br>可以使用 sudo npm install -g supervisor 命令来安装。    </p>
+<p>假设你的Node.js程序主入口是app.js，那么只需要执行以下命令，即可开始监控文件变化。</p>
+<p> 代码如下:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">supervisor app.js</div></pre></td></tr></table></figure></p>
+<h2 id="Supervisor还支持多种参数，列举如下："><a href="#Supervisor还支持多种参数，列举如下：" class="headerlink" title="Supervisor还支持多种参数，列举如下："></a>Supervisor还支持多种参数，列举如下：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">//要监控的文件夹或js文件，默认为<span class="string">'.'</span></div><div class="line">-w|--watch &lt;watchItems&gt;</div><div class="line">  </div><div class="line"> </div><div class="line">//要忽略监控的文件夹或js文件 </div><div class="line">-i|--ignore &lt;ignoreItems&gt;</div><div class="line"> </div><div class="line">//监控文件变化的时间间隔（周期），默认为Node.js内置的时间</div><div class="line">-p|--poll-interval &lt;milliseconds&gt;</div><div class="line"> </div><div class="line">//要监控的文件扩展名，默认为<span class="string">'node|js'</span></div><div class="line">-e|--extensions &lt;extensions&gt;</div><div class="line"> </div><div class="line">//要执行的主应用程序，默认为<span class="string">'node'</span></div><div class="line">-x|--<span class="built_in">exec</span> &lt;executable&gt;</div><div class="line"> </div><div class="line">//开启debug模式（用--debug flag来启动node）</div><div class="line">--debug</div><div class="line"> </div><div class="line">//安静模式，不显示DEBUG信息</div><div class="line">-q|--quiet</div></pre></td></tr></table></figure>
+<p>例子：</p>
+<p> 代码如下:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">supervisor myapp.js</div><div class="line">supervisor -w py_scripts -e <span class="string">'py'</span> -x python myapp.py</div><div class="line">supervisor -w lib, server.js, config.js, server.js</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/25/work-02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/icon.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yan yan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/25/work-02/" itemprop="url">citylife 海融宝</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-25T17:09:18+08:00">
+                2017-07-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/作品集/" itemprop="url" rel="index">
+                    <span itemprop="name">作品集</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>前端模板源码<a href="https://github.com/yy27/citylife" target="_blank" rel="external">https://github.com/yy27/citylife</a><br><img src="/images/work/0_2登录页.jpg" alt="citylife" title="海融宝登录页"><br><img src="/images/work/0_3后台界面-操作员管理.jpg" alt="citylife" title="后台界面-操作员管理"><br><img src="/images/work/0_4后台界面-订单管理.jpg" alt="citylife" title="后台界面-订单管理"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/25/work-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/icon.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yan yan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/25/work-01/" itemprop="url">小时候老家论坛</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-25T15:47:27+08:00">
+                2017-07-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/作品集/" itemprop="url" rel="index">
+                    <span itemprop="name">作品集</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx88eba2854aa9fa31&amp;redirect_uri=http%3A%2F%2Fbbs.keke.top%2F%3F%2Fwx%2Fmain%2Findex%2F&amp;response_type=code&amp;scope=snsapi_userinfo&amp;state=oauth#wechat_redirect" target="_blank" rel="external">小时候老家论坛</a><br>*必须在微信中打开此链接<br>前端模板源码<a href="https://github.com/yy27/bbs-home-town" target="_blank" rel="external">https://github.com/yy27/bbs-home-town</a><br><img src="/images/work/111.jpg" alt="hometown" title="home"><br><img src="/images/work/222.jpg" alt="hometown" title="home"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/25/git-03/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -784,7 +1195,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -795,7 +1206,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -806,7 +1217,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
