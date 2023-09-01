@@ -37,6 +37,25 @@
   
   
   <entry>
+    <title>海融宝</title>
+    <link href="/2022/08/27/citylife/"/>
+    <url>/2022/08/27/citylife/</url>
+    
+    <content type="html"><![CDATA[<h2 id="海融宝"><a href="#海融宝" class="headerlink" title="海融宝"></a>海融宝</h2><p>银行海慧生活项目，负责前端页面的研发及接口联调，测试提出问题的修复。</p><p><a href="http://localhost:4000/citylife/main.html">演示地址</a></p><p><img src="/img/citylife1.png" alt="首页" title="首页"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>作品集</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>监控平台</title>
     <link href="/2022/08/27/bigScreen/"/>
     <url>/2022/08/27/bigScreen/</url>
@@ -132,25 +151,6 @@
   
   
   <entry>
-    <title>海融宝</title>
-    <link href="/2022/08/27/citylife/"/>
-    <url>/2022/08/27/citylife/</url>
-    
-    <content type="html"><![CDATA[<h2 id="海融宝"><a href="#海融宝" class="headerlink" title="海融宝"></a>海融宝</h2><p>银行海慧生活项目，负责前端页面的研发及接口联调，测试提出问题的修复。</p><p><a href="http://localhost:4000/citylife/main.html">演示地址</a></p><p><img src="/img/citylife1.png" alt="首页" title="首页"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>作品集</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>苛刻商城</title>
     <link href="/2022/08/27/kkmall/"/>
     <url>/2022/08/27/kkmall/</url>
@@ -172,6 +172,39 @@
       <tag>css</tag>
       
       <tag>jquery</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>内网离线地图服务部署及应用</title>
+    <link href="/2022/08/27/map/"/>
+    <url>/2022/08/27/map/</url>
+    
+    <content type="html"><![CDATA[<h2 id="内网离线地图服务"><a href="#内网离线地图服务" class="headerlink" title="内网离线地图服务"></a>内网离线地图服务</h2><p>基于OpenStreetMap的开源的shp数据，使用geoserver作为GIS服务，使用mapbox进行地图的渲染，实现了内网离线地图服务。</p><ol><li>支持矢量瓦片数据</li><li>支持百度地图风格</li><li>支持地图风格切换</li><li>支持自定义图层渲染</li><li>支持三维模型载入</li></ol><p><img src="/img/map1.jpg" alt="地图服务基础应用" title="地图服务基础应用"></p><p><img src="/img/map2.jpg" alt="地图支持建筑高度" title="地图支持建筑高度"></p><p><img src="/img/maptheme.png" alt="地图主题" title="地图风格"></p><h2 id="地图服务的应用"><a href="#地图服务的应用" class="headerlink" title="地图服务的应用"></a>地图服务的应用</h2><p>地图服务可以作为基础服务为地图场景提供支持，结合mapbox或者openlayer等地图渲染框架，实现丰富的地图场景。</p><ul><li>可视化和动画化展示地理数据</li><li>查询和过滤地图上的要素</li><li>在地图框样式的图层之间放置数据</li><li>在地图上动态显示和设置自定义客户端数据的样式</li><li>三维数据可视化和动画</li><li>以编程方式向地图添加标记和弹出窗口</li></ul><p><img src="/img/map3d.jpg" alt="地图主题" title="地图结合三维模型的应用"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>作品集</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>html</tag>
+      
+      <tag>css</tag>
+      
+      <tag>javascript</tag>
+      
+      <tag>geoserver</tag>
+      
+      <tag>mapbox</tag>
       
     </tags>
     
@@ -234,39 +267,6 @@
       <tag>typescript</tag>
       
       <tag>vue</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>内网离线地图服务部署及应用</title>
-    <link href="/2022/08/27/map/"/>
-    <url>/2022/08/27/map/</url>
-    
-    <content type="html"><![CDATA[<h2 id="内网离线地图服务"><a href="#内网离线地图服务" class="headerlink" title="内网离线地图服务"></a>内网离线地图服务</h2><p>基于OpenStreetMap的开源的shp数据，使用geoserver作为GIS服务，使用mapbox进行地图的渲染，实现了内网离线地图服务。</p><ol><li>支持矢量瓦片数据</li><li>支持百度地图风格</li><li>支持地图风格切换</li><li>支持自定义图层渲染</li><li>支持三维模型载入</li></ol><p><img src="/img/map1.jpg" alt="地图服务基础应用" title="地图服务基础应用"></p><p><img src="/img/map2.jpg" alt="地图支持建筑高度" title="地图支持建筑高度"></p><p><img src="/img/maptheme.png" alt="地图主题" title="地图风格"></p><h2 id="地图服务的应用"><a href="#地图服务的应用" class="headerlink" title="地图服务的应用"></a>地图服务的应用</h2><p>地图服务可以作为基础服务为地图场景提供支持，结合mapbox或者openlayer等地图渲染框架，实现丰富的地图场景。</p><ul><li>可视化和动画化展示地理数据</li><li>查询和过滤地图上的要素</li><li>在地图框样式的图层之间放置数据</li><li>在地图上动态显示和设置自定义客户端数据的样式</li><li>三维数据可视化和动画</li><li>以编程方式向地图添加标记和弹出窗口</li></ul><p><img src="/img/map3d.jpg" alt="地图主题" title="地图结合三维模型的应用"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>作品集</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>html</tag>
-      
-      <tag>css</tag>
-      
-      <tag>javascript</tag>
-      
-      <tag>geoserver</tag>
-      
-      <tag>mapbox</tag>
       
     </tags>
     
