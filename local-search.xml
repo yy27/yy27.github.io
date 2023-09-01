@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>分析系统辅助研判</title>
-    <link href="/2022/08/27/analysisSystem/"/>
-    <url>/2022/08/27/analysisSystem/</url>
+    <title>监控平台</title>
+    <link href="/2022/08/27/bigScreen/"/>
+    <url>/2022/08/27/bigScreen/</url>
     
-    <content type="html"><![CDATA[<h2 id="分析系统辅助研判"><a href="#分析系统辅助研判" class="headerlink" title="分析系统辅助研判"></a>分析系统辅助研判</h2><p>支撑XX市大比武项目，使用了angularjs框架作为前端框架，图表插件echarts等三种开源关系图插件，对上万个节点过滤筛选，解决了节点过多的渲染性能问题。</p><p><img src="/img/analysis1.png" alt="分析系统预置模型" title="分析系统预置模型"><br><img src="/img/analysis2.png" alt="分析系统辅助研判" title="分析系统辅助研判"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="监控平台"><a href="#监控平台" class="headerlink" title="监控平台"></a>监控平台</h2><p>使用angularjs作为前端框架，echarts作为图表插件，实现了复杂的交互效果，包括三级下钻、左右侧联动、数据的实时更新等，完成了大屏数据状态的实时监控。</p><p><img src="/img/big1.png" alt="监控平台" title="监控平台"></p>]]></content>
     
     
     <categories>
@@ -37,11 +37,11 @@
   
   
   <entry>
-    <title>监控平台</title>
-    <link href="/2022/08/27/bigScreen/"/>
-    <url>/2022/08/27/bigScreen/</url>
+    <title>分析系统辅助研判</title>
+    <link href="/2022/08/27/analysisSystem/"/>
+    <url>/2022/08/27/analysisSystem/</url>
     
-    <content type="html"><![CDATA[<h2 id="监控平台"><a href="#监控平台" class="headerlink" title="监控平台"></a>监控平台</h2><p>使用angularjs作为前端框架，echarts作为图表插件，实现了复杂的交互效果，包括三级下钻、左右侧联动、数据的实时更新等，完成了大屏数据状态的实时监控。</p><p><img src="/img/big1.png" alt="监控平台" title="监控平台"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="分析系统辅助研判"><a href="#分析系统辅助研判" class="headerlink" title="分析系统辅助研判"></a>分析系统辅助研判</h2><p>支撑XX市大比武项目，使用了angularjs框架作为前端框架，图表插件echarts等三种开源关系图插件，对上万个节点过滤筛选，解决了节点过多的渲染性能问题。</p><p><img src="/img/analysis1.png" alt="分析系统预置模型" title="分析系统预置模型"><br><img src="/img/analysis2.png" alt="分析系统辅助研判" title="分析系统辅助研判"></p>]]></content>
     
     
     <categories>
