@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>海融宝</title>
+    <link href="/2022/08/27/citylife/"/>
+    <url>/2022/08/27/citylife/</url>
+    
+    <content type="html"><![CDATA[<h2 id="海融宝"><a href="#海融宝" class="headerlink" title="海融宝"></a>海融宝</h2><p>银行海慧生活项目，负责前端页面的研发及接口联调，测试提出问题的修复。</p><p><a href="http://localhost:4000/citylife/main.html">演示地址</a></p><p><img src="/img/citylife1.png" alt="首页" title="首页"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>作品集</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>大屏样例</title>
+    <link href="/2022/08/27/daping/"/>
+    <url>/2022/08/27/daping/</url>
+    
+    <content type="html"><![CDATA[<h2 id="大屏样例"><a href="#大屏样例" class="headerlink" title="大屏样例"></a>大屏样例</h2><ol><li>整体态势 <a href="http://localhost:4000/daping_html/index.html">查看示例</a></li></ol><p><img src="/img/daping1.png" alt="首页" title="首页"></p><ol start="2"><li>应急管控 <a href="http://localhost:4000/daping_html/guangkong.html">查看示例</a></li></ol><p><img src="/img/daping2.png" alt="管控" title="管控"></p><ol start="3"><li>应急处置 <a href="http://localhost:4000/daping_html/yingji.html">查看示例</a></li></ol><p><img src="/img/daping3.png" alt="应急" title="应急"></p><ol start="4"><li>预防 <a href="http://localhost:4000/daping_html/yufang.html">查看示例</a></li></ol><p><img src="/img/daping4.png" alt="预防" title="预防"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>作品集</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>html</tag>
+      
+      <tag>css</tag>
+      
+      <tag>typescript</tag>
+      
+      <tag>vue</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>分析系统辅助研判</title>
     <link href="/2022/08/27/analysisSystem/"/>
     <url>/2022/08/27/analysisSystem/</url>
@@ -31,25 +81,6 @@
       <tag>echarts</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>海融宝</title>
-    <link href="/2022/08/27/citylife/"/>
-    <url>/2022/08/27/citylife/</url>
-    
-    <content type="html"><![CDATA[<h2 id="海融宝"><a href="#海融宝" class="headerlink" title="海融宝"></a>海融宝</h2><p>银行海慧生活项目，负责前端页面的研发及接口联调，测试提出问题的修复。</p><p><a href="http://localhost:4000/citylife/main.html">演示地址</a></p><p><img src="/img/citylife1.png" alt="首页" title="首页"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>作品集</category>
-      
-    </categories>
-    
     
   </entry>
   
@@ -89,37 +120,6 @@
   
   
   <entry>
-    <title>大屏样例</title>
-    <link href="/2022/08/27/daping/"/>
-    <url>/2022/08/27/daping/</url>
-    
-    <content type="html"><![CDATA[<h2 id="大屏样例"><a href="#大屏样例" class="headerlink" title="大屏样例"></a>大屏样例</h2><ol><li>整体态势 <a href="http://localhost:4000/daping_html/index.html">查看示例</a></li></ol><p><img src="/img/daping1.png" alt="首页" title="首页"></p><ol start="2"><li>应急管控 <a href="http://localhost:4000/daping_html/guangkong.html">查看示例</a></li></ol><p><img src="/img/daping2.png" alt="管控" title="管控"></p><ol start="3"><li>应急处置 <a href="http://localhost:4000/daping_html/yingji.html">查看示例</a></li></ol><p><img src="/img/daping3.png" alt="应急" title="应急"></p><ol start="4"><li>预防 <a href="http://localhost:4000/daping_html/yufang.html">查看示例</a></li></ol><p><img src="/img/daping4.png" alt="预防" title="预防"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>作品集</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>html</tag>
-      
-      <tag>css</tag>
-      
-      <tag>typescript</tag>
-      
-      <tag>vue</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>教育培训考试系统</title>
     <link href="/2022/08/27/exam/"/>
     <url>/2022/08/27/exam/</url>
@@ -140,9 +140,9 @@
       
       <tag>css</tag>
       
-      <tag>javascript</tag>
-      
       <tag>vue</tag>
+      
+      <tag>javascript</tag>
       
     </tags>
     
@@ -180,6 +180,37 @@
   
   
   <entry>
+    <title>低代码开发平台</title>
+    <link href="/2022/08/27/lowcode/"/>
+    <url>/2022/08/27/lowcode/</url>
+    
+    <content type="html"><![CDATA[<h2 id="低代码开发平台"><a href="#低代码开发平台" class="headerlink" title="低代码开发平台"></a>低代码开发平台</h2><p>负责低代码平台的项目管理及架构设计工作，经过业务分析选择了阿里的低代码引擎作为基础，扩展了多页面的出包和出码功能，新增了项目的管理模块包括项目用户权限管理，项目版本管理，项目主题管理，可视化的管理项目，完善了组件库的创建发布流程，实现了组件库的可见即可用。</p><p><img src="/img/lowcode2.jpg" alt="项目管理" title="项目管理"></p><p><img src="/img/lowcode1.png" alt="编辑器" title="页面编辑器"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>作品集</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>typescript</tag>
+      
+      <tag>scss</tag>
+      
+      <tag>react</tag>
+      
+      <tag>nodejs</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>内网离线地图服务部署及应用</title>
     <link href="/2022/08/27/map/"/>
     <url>/2022/08/27/map/</url>
@@ -205,37 +236,6 @@
       <tag>geoserver</tag>
       
       <tag>mapbox</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>低代码开发平台</title>
-    <link href="/2022/08/27/lowcode/"/>
-    <url>/2022/08/27/lowcode/</url>
-    
-    <content type="html"><![CDATA[<h2 id="低代码开发平台"><a href="#低代码开发平台" class="headerlink" title="低代码开发平台"></a>低代码开发平台</h2><p>负责低代码平台的项目管理及架构设计工作，经过业务分析选择了阿里的低代码引擎作为基础，扩展了多页面的出包和出码功能，新增了项目的管理模块包括项目用户权限管理，项目版本管理，项目主题管理，可视化的管理项目，完善了组件库的创建发布流程，实现了组件库的可见即可用。</p><p><img src="/img/lowcode2.jpg" alt="项目管理" title="项目管理"></p><p><img src="/img/lowcode1.png" alt="编辑器" title="页面编辑器"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>作品集</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>typescript</tag>
-      
-      <tag>scss</tag>
-      
-      <tag>react</tag>
-      
-      <tag>nodejs</tag>
       
     </tags>
     
