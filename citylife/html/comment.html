@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" charset="UTF-8" href="../css/public.css" />
+<link rel="stylesheet" type="text/css" charset="UTF-8" href="../css/jquery-ui.css"/>
+<script type="text/javascript" src="../javascript/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery-ui-datepicker.js"></script>
+<script type="text/javascript" src="../javascript/public.js"></script>
+<title>评价管理</title>
+<script>
+  $(function() {
+    $( "#comment_f" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      onClose: function( selectedDate ) {
+        $( "#comment_t" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#comment_t" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      onClose: function( selectedDate ) {
+        $( "#comment_f" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  });
+  </script>
+ 
+</head>
+
+<body>
+	<div class="tabHead">
+    	<ul class="tabList">
+        	<li class="tabOn">商户评价</li>
+            <li>商品评价</li>
+        </ul>
+    </div>
+    <div class="orderSearch">
+   		<p><span>星级:</span>
+        	<select>
+                <option>--请选择--</option>
+                <option>三星</option>
+                <option>四星</option>
+                <option>五星</option>
+            </select>
+        </p>
+        <p><span>商户名称:</span><input type="text"/></p>
+         <p class="date"><span>时间:</span><input id="comment_f" type="text"/><b>--</b><input id="comment_t" type="text"/></p>
+        <p><button class="openWindow_but noMargin">查&nbsp;&nbsp;&nbsp;&nbsp;询</button></p>
+    </div>
+    <div class="commentBox">
+    	<div class="commentWrap">
+        	<div class="floor_host">
+                <div class="comm_icon">
+                	<img src="../images/comm_icon.png" />
+                </div>
+                <div class="comm_box">
+                    <div class="comm_title">
+                    	<span class="name"><b class="u_name">匿名评价</b><br/><b class="date">2014/05/10</b></span>
+                    	<span class="star"></span>
+                    </div>
+                    <div class="comm_text">
+                    	 凡带快捷标识的卡种，已持主卡的客户可在线直接申请，无需打印回函。如您同时需申请附属卡，则仍需以纸质档回函形式办理凡带快捷标识的卡种，已持主卡的客户可在线直接申请，无需打印回函。如您同时需申请附属卡，则仍需以纸质
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="commentWrap">
+        	<div class="floor_host">
+                <div class="comm_icon">
+                	<img src="../images/comm_icon.png" />
+                </div>
+                <div class="comm_box">
+                    <div class="comm_title">
+                    	<span class="name"><b class="u_name">匿名评价</b><br/><b class="date">2014/05/10</b></span>
+                    	<span class="star"></span>
+                    </div>
+                    <div class="comm_text">
+                    	 凡带快捷标识的卡种，已持主卡的客户可在线直接申请，无需打印回函。如您同时需申请附属卡，则仍需以纸质档回函形式办理凡带快捷标识的卡种，已持主卡的客户可在线直接申请，无需打印回函。如您同时需申请附属卡，则仍需以纸质
+                    </div>
+                </div>
+            </div>
+            <div class="floor_host comm_reply">
+                <div class="comm_icon">
+                	<img src="../images/comm_icon.png" />
+                </div>
+                <div class="comm_box">
+                    <div class="comm_title">
+                    	<span class="name"><b class="u_name">匿名评价</b><br/><b class="date">2014/05/10</b></span>
+                    	
+                    </div>
+                    <div class="comm_text">
+                    	 凡带快捷标识的卡种，已持主卡的客户可在线直接申请，无需打印回函。如您同时需申请附属卡，则仍需以纸质档回函形式办理凡带快捷标识的卡种，已持主卡的客户可在线直接申请，无需打印回函。如您同时需申请附属卡，则仍需以纸质
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div id="setpage"></div> 
+</body>
+
+</html>

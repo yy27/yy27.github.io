@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>践行者</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<!-- //再载入lazyload -->
+	<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+</head>
+<body>
+<style>
+	.w515{ width: 515px;}
+	.w685{ width: 685px;}
+	.pra_photo{ height:310px; }
+	.pra_photo img{ display: block;}
+	.pra_intro{ height: 310px; position: relative;  background-color: #d9d9d9;}
+	.pra_content{ overflow: hidden;background-color: #d9d9d9; height: 230px; -webkit-box-sizing:border-box; /* Safari */ position: absolute; left: 0; top: 0; transition:all ease 0.4s 0s; padding: 50px 40px;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */ overflow: hidden;}
+	.pra_intro p{ font-size: 16px; line-height: 30px;  }
+	.pra_show{ display: block; position: absolute; width: 50px; height: 50px; background: #ccc; bottom: 20px; right: 20px; cursor: pointer;}
+	.pra_hide{ display: none; position: absolute; width: 50px; height: 50px; background: #ccc; bottom: 20px; right: 20px; cursor: pointer;}
+</style>
+	<div class="w1200 center clearfix">
+		<div class="fl pra_photo w515">
+			<img src="images/a践行者/1.jpg">
+		</div>
+		<div class="fr pra_intro w685">
+			<div class="pra_content">
+				<p>
+				2015年，吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				2015年，吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				2015年，吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				2015年，吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				吴迪按分类静安寺吴迪按分类静安寺吴迪按分类静安寺
+				<span class="pra_hide">收起</span>
+				</p>
+			</div>
+				
+			
+			
+			<span class="pra_show">展开</span>
+		</div>
+		
+	</div>
+<script>
+	$(function(){
+		$(".pra_show").click(function(){
+			var h=$(".pra_intro p").height()+100;
+			$(".pra_content").css({"height":h});
+			$(this).fadeOut();
+			$(".pra_hide").fadeIn();
+		})
+		$(".pra_hide").click(function(){
+			$(".pra_content").css({"height":"230px"});
+			$(this).fadeOut();
+			$(".pra_show").fadeIn();
+		})
+	})
+</script>
+</body>
+</html>

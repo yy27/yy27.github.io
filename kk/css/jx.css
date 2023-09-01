@@ -1,0 +1,80 @@
+#par_news .color_F9F5F0>li{background-color: #F9F5F0 !important;}
+
+
+.par_price:hover{ color: #08c !important;}
+
+.pra_banner{ border-top:solid 1px #000; border-bottom: solid 1px #000; }
+
+.pra-close{position: absolute; top: 10px; right: 10px; display: block; width: 40px; height: 40px; background: url("../images/close.png") no-repeat center; cursor: pointer;}
+
+.pra_title h1{ text-align: center; font-size: 25px; font-weight: normal;}
+.pra_title h2{ font-size: 21px; font-weight: normal;}
+.pra_title h2 hr{ border: none; border-bottom: solid 1px #A8A8A8;}
+
+.pra_intro{ position: relative; width: 100%; height: 310px;}
+.pra_intro .prea,.pra_intro .next{cursor:pointer;display: block; width: 50px; height: 70px; line-height: 70px; color: #fff; background-color: rgba(0,0,0,0.3); position: absolute;top: 50%; margin-top: -35px; text-align: center; font-size: 20px;}
+.pra_intro .prea{left: 0px; }
+.pra_intro .next{ right: 0px;}
+.pra_intro ul{ position: relative; width: 100%; height: 310px;}
+.pra_intro ul li{ position: absolute; top: 0; left: 0; display: none;}
+.pra_intro ul li:nth-child(1){display: block;}
+.pra_intro ul li img{ width: 1200px; height: 310px; display: block;}
+#par_news{ width: 513px;}
+#par_news .par_news_list>li{ margin: 0 auto; margin-bottom: 20px;
+    -webkit-box-shadow: 0 30px 30px -35px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 30px 30px -35px rgba(0,0,0,0.4);
+    box-shadow: 0 30px 30px -35px rgba(0,0,0,0.4);  background-color: #e1e9eb; padding:25px 40px 15px 40px;}
+#par_news .par_news_list li h2{ font-weight: normal; font-size: 20px; line-height: 35px;}
+#par_news .par_news_list li p{ line-height: 25px; font-size: 13px;}
+#par_news .par_news_list li img, #par_news .par_news_list li span{ display: block;}
+#par_news .par_news_list li span{ color: #666666;}
+#par_news .par_news_list li .par_li_nav a{ display: block; float: left; line-height: 18px; padding:0 40px; font-size: 15px; border-right: solid 1px #a3a9ac;}
+#par_news .par_new_number{display: table; margin: 40px auto;}
+#par_news .par_new_number li{ float: left;border-radius: 10px; margin-left: 15px;  cursor: pointer; border: solid 1px #fff;transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s;  }
+#par_news .par_new_number li:hover{ border: solid 1px #000; }
+#par_news .par_new_number li a{ display: block; width: 88px; height: 25px; line-height: 25px; text-align: center;}
+#par_news .par_new_number .active{border: solid 1px #e1e9eb; }
+
+#parPhoto .par_photoImgs li{ position: relative;}
+#parPhoto .par_photoImgs li img{ display: block; margin: 0 auto;}
+
+#par_product{ width: 655px;}
+#par_product .pra_recommend{ overflow: hidden;}
+#par_product .pra_recommend li{ float: left;  margin-left: 30px; position: relative;}
+#par_product .pra_recommend li .rx{ position: absolute; top:0px; left:0px; display: block;}
+#par_product .pra_recommend li .rx img{ width: 50px;}
+#par_product .pra_recommend li:hover .par_price{ color: #08c !important;}
+#par_product .pra_recommend li a{ color: #000; text-align: center;}
+#par_product .pra_recommend li span{ line-height: 25px; display: block; color: #595757;}
+#par_product .pra_recommend li i{ line-height: 25px; font-size: 12px; display: block; color: #595757;}
+#par_product .pra_recommend .par_pro_a{ width: 295px; height: 380px; border-right: solid 1px #bababa; }
+#par_product .pra_recommend .red_par{width: 200px;}
+#par_product .pra_recommend .par_pro_b{ width: 290px; height: 190px; }
+#par_product .pra_recommend li .par_pro_txt{ width: 110px; text-align: left; margin-top: 55px;}
+
+#par_product .par_slogan{ overflow: hidden;}
+#par_product .par_slogan li{ float: left;font-size: 16px; color: #666666;}
+.jiegang{ width: 95px; text-align: center;}
+#par_product .title{ font-size: 21px; padding: 0 32px; color: #706765; font-weight: normal;}
+#par_product .title hr{ width: 520px; float: right; margin-top: 18px; color: #706765; border: none; border-bottom: solid 1px #ccc;}
+
+#par_product .pra_class{ width: 615px; margin-left: 40px;}
+#par_product .pra_class li{ width: 195px; height: 210px; padding: 20px 0; background-color: #fff; margin: 20px 5px; float: left; z-index: 100; transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s;}
+#par_product .pra_class li img,#par_product .pra_class li a{ display: block;}
+#par_product .pra_class li img{ width: 195px; height: 130px;}
+#par_product .pra_class li:hover{ box-shadow: 0 0px 30px rgba(0,0,0,0.1);}
+#par_product .pra_class li a{ color: #000; text-align: center;}
+#par_product .pra_class li span{ line-height: 25px; display: block; color: #515050;}
+
+#par_product .par_proNav li{ float: left; line-height: 30px; font-size: 18px; color: #706765; cursor: pointer;  border:solid 1px #e1e9eb;transition: all 0.4s ease 0s;padding: 0 37px; -webkit-transition: all 0.4s ease 0s; border-radius: 10px; -moz-border-radius: 10px;margin-left: 20px;}
+#par_product .par_proNav li:hover{ background-color: #e1e9eb;  }
+#par_product .par_proNav .active{ background-color: #e1e9eb; }
+#par_product .par_proNav li a{ display: block; font-size: 18px; color: #706765;padding: 0 40px; }
+
+#pra_more ul li{ float: left; width: 216px; height: 260px; margin-left: 30px; transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s;}
+#pra_more ul li:hover{ box-shadow: 0 15px 30px rgba(0,0,0,0.1);}
+#pra_more ul li a img{ display: block; width: 216px; height: 216px;}
+#pra_more ul li a{ display: block; text-align: center; }
+#pra_more ul li a span{font-size: 15px; color: #787878; line-height: 50px;}
+
+#par_popup{ width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(255,255,255,0.8); z-index: 1000; display: none; overflow: scroll;}

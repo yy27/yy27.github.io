@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/keke.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/personal_center.css" rel="stylesheet" type="text/css">
+    <link href="css/user_center.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/personal_center.js"></script>
+    <script src="js/user_center.js"></script>
+</head>
+<body>
+<div class="bgclr_ef p_relative">
+	<div class="secondHeaderCenter">
+		<div class="us-box-nav">
+			<a href="#">首页</a><span class="sep">></span><span>个人中心</span><span class="sep">></span><span>用户名</span><span class="sep">></span><span>会员级别</span>
+		</div>
+		<div class="us-box clearfix">
+			<div class="fl us-box-l bgclr_fff">
+				<dl class="us-bos-list">
+					<dt>我的订单</dt>
+					<div class="us-box-menu">
+						<dd><a href="#">我的订单</a></dd>
+						<dd><a href="#">物流一览</a></dd>
+						<dd><a href="#">我的购物车</a></dd>
+						<dd><a href="#">我的所有交易明细</a></dd>
+						<dd><a href="#">退换货明细</a></dd>
+					</div>	   				
+				</dl>
+				<dl class="us-bos-list">
+					<dt>账户明细</dt>
+					<div class="us-box-menu">
+						<dd><a href="#">账户余额</a></dd>
+						<dd><a href="#">平台充值</a></dd>
+						<dd><a href="#">券+积分（安全设置）</a></dd>
+						<dd><a href="#">礼品卡发票明细</a></dd>
+					</div>
+				</dl>
+				<dl class="us-bos-list">
+					<dt>收藏和关注</dt>
+					<div class="us-box-menu">
+						<dd><a href="#">我收藏的商品</a></dd>
+						<dd><a href="#">我收藏的文章和视频</a></dd>
+						<dd><a href="#">我的关注</a></dd>
+						<dd><a href="#">最近浏览</a></dd>
+					</div>
+				</dl>
+				<dl class="us-bos-list">
+					<dt>客户之家</dt>
+					<div class="us-box-menu">
+						<dd><a href="#">退货流程</a></dd>
+						<dd><a href="#">退款流程</a></dd>
+						<dd><a href="#">邮递细节</a></dd>
+						<dd><a href="#">客服在线</a></dd>
+						<dd><a href="#">建议与反馈</a></dd>
+					</div>
+				</dl>
+				<dl class="us-bos-list">
+					<dt>用户名（账号管理）</dt>
+					<div class="us-box-menu">
+						<dd><a href="#">个人信息</a></dd>
+						<dd><a href="#">会员级别</a></dd>
+						<dd><a href="#">地址管理</a></dd>
+					</div>
+				</dl>
+				<dl class="us-bos-list">
+					<dt>账号安全</dt>
+					<div class="us-box-menu">
+						<dd><a href="#">密码修改</a></dd>
+						<dd><a href="#">邮箱手机解绑与绑定</a></dd>
+						<dd><a href="#">安全级别与保护</a></dd>
+						<dd><a href="#">分享号码关联</a></dd>
+					</div>
+				</dl>
+			</div>
+			<div class="fr us-box-r bgclr_fff">
+				<div class="us-box-rContent p_relative us_level_box">
+					<div class="us-info-box us_level clearfix p_absolute">
+						<div class="us-photo-108 fl">
+							<img src="images/user_center/icon02.jpg" alt="">
+						</div>
+						<ul class="us-info us_level_t fl">
+							<h3><span>基础资料</span><a id="user_edit">编辑</a></h3>
+							<li><span>姓　名</span>张三</li>
+							<li><span>昵　称</span>喀喀喀</li>
+							<li><span>登录名</span>xiaoxiaone77</li>
+							<li><span>生　日</span>1980年7月22日</li>
+							<li><span>性　别</span>男</li>
+							<li><span>手　机</span>12549648545</li>
+							<li><span>邮　箱</span>sfuvnsl@163.com</li>
+							<li><span>常住城市/国家</span>山东 · 济南</li>
+						</ul>
+					</div>
+
+
+					<div class="us-info-box us_level clearfix p_absolute us_level_edit" id="us_level_edit">
+						<span class="user_c_close" id="user_c_close"></span>
+						<div class="us-photo-108 fl">
+							<img src="images/user_center/icon02.jpg" alt="">
+						</div>
+						<ul class="us-info us_level_t fl">
+							<h3><span>基础资料</span></h3>
+							<li><span>姓　名</span><input type="text" value="张三" class="text" /></li>
+							<li><span>昵　称</span><input type="text" value="张三" class="text" /></li>
+							<li><span>登录名</span><input type="text" value="张三" class="text" /></li>
+							<li><span>生　日</span><select><option>选择年</option></select><select><option>选择月</option></select><select><option>选择日</option></select></li>
+							<li><span>性　别</span><label class="sex"><input type="radio" value="男" name="sex" />男</label><label class="sex"><input type="radio" value="女" name="sex" />女</label></li>
+							<li><span>手　机</span><input type="text" value="张三" class="text" /></li>
+							<li><span>邮　箱</span><input type="text" value="张三" class="text" /></li>
+							<li><span>常住城市/国家</span><select><option>选择省</option></select><select><option>选择市</option></select><select><option>选择区</option></select></li>
+						</ul>
+						<div class="edit_btn_box fl"><p class="edit_btn"><input type="button" value="保存" /><input type="button" value="取消" /></p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="us_overlap" id="us_overlap"></div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/*通用*/
+.bgclr_ef{ background-color: #efefef;}
+.bgclr_fff{background-color: #fff;}
+.clra01414{ color: #a01414;}
+.clr2ea7ed{color: #2ea7ed;}
+.clr595757{ color: #595757;}
+.clr959697{ color: #959697;}
+.span-all{ line-height: 30px; color: #595757;}
+.dlshow{ display: block;}
+.dlhide{ display: none;}
+.us-btn-a{ display: block; height: 30px; padding: 0 15px; line-height: 30px; background-color: #646464; color: #fff;}
+.us-title-a{font-weight: normal; padding-left: 7px; border-left: solid 2px #595757; color: #595757; line-height: 16px; font-size: 14px;}
+
+.us-box-nav{ padding: 15px 0;}
+.us-box-nav .sep{ margin: 0 10px;}
+.us-box-nav a,.us-box-nav span{ color: #595757; font-size: 12px; font-weight: 500;}
+.us-box{ /*padding-top: 50px;*/ padding-bottom: 80px;}
+
+.us-box .us-box-l{ width: 180px; padding-left: 20px; padding-bottom: 178px; padding-top: 70px;}
+.us-box .us-box-r{ width: 960px; min-height: 640px;}
+.us-box .us-box-r .us-box-rContent{ margin: 70px auto; width: 800px; overflow: hidden;}
+/*.us-box .us-bos-list{}*/
+.us-box .us-bos-list .us-box-menu{ padding-bottom: 70px;}
+.us-box .us-bos-list dt{ font-size: 16px; color: #3e3a39; line-height: 28px; font-weight: bold; letter-spacing: 1px; cursor: pointer;}
+.us-box .us-bos-list dd a{ font-size: 14px; color: #595757; line-height: 28px;}
+
+/*用户信息*/
+.us-info-box{ padding: 13px 30px;}
+.us-info-box .us-photo img{ width: 80px; height: 80px; display: block; border-radius: 50%;}
+.us-info-box .us-info{ line-height: 24px; letter-spacing: 2px;}
+.us-info-box .us-info-one{ width: 245px; margin-left: 45px;}
+.us-info-box .us-info-one .us-name,.us-info-box .us-info-one .us-vip{ color: #595757; font-size: 14px;}
+.us-info-box .us-info-one .us-vip i,.us-info-box .us-info-one .us-vip span{ display: block;}
+.us-info-box .us-info-one .us-vip span{ width: 80px; height: 14px; background: url("../images/user_center/xing.jpg") no-repeat 0px -14px; margin-top: 5px;}
+.us-info-change a:hover{ color: #2ea7ed !important;}
+.us-info-box .us-info-one .us-info-change a{font-family: "微软雅黑"; font-size: 12px; color:#898989;}
+.us-info-box .us-info-two li{ color: #898989; font-size: 14px; font-weight: lighter;}
+
+/*用户账户信息*/
+.us-account-info{ padding-top: 42px; padding-bottom: 30px; border-top: solid 1px #585858;}
+.us-account-info .us-account,.us-account-info .us-card,.us-account-info .us-integral{ color: #959697; text-align: center; border-right: solid 1px #585858;}
+.us-account-info ul li a:hover{color: #a01414;}
+.us-account,.us-integral,.us-w280{ width: 280px;}
+.us-card,.us-w234{ width: 234px;}
+.us-account-info .us-account-infoTitle{ color: #595757;}
+/*交易提醒*/
+.us-deal,.us-indent,.us-collect{ border: solid 1px #898989;}
+.us-deal-a a{ display: block; line-height: 100px;}
+.us-deal-a span{ margin: 0 5px;}
+.us-deal-a i,.us-deal-a span{ display: inline-block; line-height: 100px; vertical-align: middle;}
+.us-deal-a i{ color: #595757;}
+.us-deal-a span{ color: #959697;}
+.title-menu{ padding: 6px 0;}
+.title-menu h1{font-size: 14px;  color: #595757; line-height: 14px; letter-spacing: 4px; font-weight: 600; letter-spacing: 2px; padding-left: 5px; border-left: solid 2px #595757; margin-left: 30px;}
+.us-all{ margin-right: 9px; color: #595757;}
+.title-menu span{color: #595757;}
+.us-deal p{ font-size: 12px; font-style: italic; color: #898989; text-align: center; margin-bottom: 30px;}
+/*我的订单*/
+.us-indent .row{ width: 14%; text-align: center; }
+.us-indent .title-menu h1{ width: 100px;}
+.us-indent span.row-two,.us-indent li.row-two{ text-align: left;}
+.us-indent .row-one{width: 138px;}
+.us-indent .row-one img{ display: block; width: 108px; height: 108px; margin: 0 auto;}
+.us-indent .row-two{width: 24%;}
+.us-indent .row-three,.us-indent .row-four,.us-indent .row-five{ line-height: 108px;}
+.us-indent .row-six a{display: block; line-height: 28px;}
+.us-indent .row span{ color: #646464; display: block;}
+.us-indent .row i{color: #959595;  display: block;}
+.us-indent .us-indent-list{ padding: 12px 0px;}
+.us-indent .us-indent-list>li{ float: left;}
+.us-indent .us-btn{ width: 80px; margin: 0 auto; /*border-radius: 3px;*/ /*box-shadow: 0px 0px 3px #666;*/ background-color: #959595; color: #fff; line-height: 24px !important; margin-top: 13px;}
+.us-indent .us-btn:active{box-shadow: 0px 0px 0px;}
+.us-indent .us-quxiao{ margin-top: 8px; cursor: pointer;}
+.us-genzhong-btn{ position: relative;}
+
+.us-genzhong{ display: none; position: absolute;left: -47px;top: 38px; width: 165px; background-color:#fff; border: solid 1px #898989; padding: 15px; padding-right: 30px; padding-top: 5px;}
+.us-genzhong-btn:hover .us-genzhong{ display: block !important;}
+.us-genzhong::after{
+	content: "";
+	width: 15px;
+	height: 15px;
+	border: solid 1px #898989;
+	position: absolute;
+	top: -9px;
+	left: 95px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	background-color: #fff;
+	border-bottom: none;
+	border-right: none;
+}
+.us-genzhong p{ color: #646464; margin-left: 2px;}
+.us-genzhong ul{ padding-left:15px; margin: 0 auto;}
+.us-genzhong ul li{ list-style: initial; color: #646464; line-height: 20px; margin-top: 15px;}
+
+
+
+/*我收藏的商品*/
+.us-collect h1{ cursor: pointer;}
+.us-collect .active{ color: #261f1c;}
+.us-collect-list{ padding-top:20px; padding-bottom: 30px;height: 160px;position: relative; }
+.us-collect-list ul{ display: none; position: absolute; top: 20px; width: 100%;}
+.us-collect-list ul li{ float: left; margin-left: 49px;}
+.us-collect-list ul li:nth-child(1){ margin-left: 32px;}
+.us-collect-list ul li a,.us-collect-list ul li a span,.us-collect-list ul li a img{ display: block;}
+.us-collect-list ul li a img{ width: 108px; height: 108px;}
+.us-collect-list ul li a span{ text-align: center; line-height: 20px; color: #646464;}
+
+
+/*c1*/
+.us-c1-nowsum{ overflow: hidden;}
+.us-c1-nowsum span{
+	margin-right: 20px;
+	line-height: 30px;
+	float: left;
+	display: block;
+}
+.us-c1-nowsum-list{
+	padding: 30px 0;
+	border-bottom: solid 1px #959595;
+}
+.us-c1-nowsum-list span{ font-size: 14px;}
+.us-c1-f2 ul li{ float: left; line-height: 30px; color:#595757 ; font-size: 14px;}
+.us-c1-f2 ul li input{ display: block;
+	font-size: 12px;
+	line-height: 30px;
+	width: 88px;
+	text-align: center;
+	border: none; background-color: #efefef; cursor: pointer;}
