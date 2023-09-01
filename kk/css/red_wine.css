@@ -1,0 +1,294 @@
+/*主推四个商品样式*/
+.main_right{
+    width: 680px !important;
+}
+.main_product{
+    padding-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.main_product dl{
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-left: 35px;
+    float: left;
+
+}
+.main_product dl:hover{
+    box-shadow: 0 0px 30px rgba(0,0,0,0.1);
+}
+.main_product dl dd{
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 14px !important;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+.main_product dl dd span{
+    display: block;
+}
+/*酒品分类子菜单*/
+#product_nav{
+
+}
+#product_nav li{
+    height: 30px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border:solid 1px #e1e9eb;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    line-height: 30px;
+}
+#product_nav li a{
+    text-align: center;
+    width: 100px;
+    display: block;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #706765;
+}
+#product_nav li.active{
+    background-color: #F9F5F0 ;
+}
+#product_nav li a:hover{
+    background-color: #F9F5F0 ;
+}
+#par_product .wine_list li img{
+    width: 190px;
+    height: 190px;
+}
+/*红酒之路*/
+.red_wine_route{
+    width: 1200px;
+    height: 500px;
+}
+.red_wine_route .country{
+    width: 50px;
+    float: left;
+}
+.red_wine_route .country ul li{
+    height: 70px;
+    margin: 1px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.red_wine_route .country ul li b{
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: #000;
+    border: 1px solid #727272;
+    float: left;
+}
+.red_wine_route .country ul li span{
+    display: block;
+    width: 16px;
+    float: left;
+    margin-left: 10px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px;
+}
+.red_wine_route .route{
+    width: 1150px;
+    height: 500px;
+
+}
+.route_wrap{
+    width: 1150px;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.red_wine_route .route_box{
+    position: absolute;
+    left: 0%;
+    top: 0px;
+}
+.red_wine_route .country ul li.now b{
+    background: #BC0227;
+    border: 1px solid #A10421;
+}
+.red_wine_route .country ul li.on b{
+    background: #BC0227;
+    border: 1px solid #A10421;
+}
+.red_wine_route .route .map{
+    width: 450px;
+    height: 100%;
+    float: left;
+}
+.red_wine_route .route .route_line{
+    position: relative;
+    width: 680px;
+    height: 100%;
+    float: right;
+    display: none;
+}
+.red_wine_route .route .active{
+    display: block;
+}
+.red_wine_route .route .map h4{
+    padding-left: 70px;
+    font-size: 18px;
+}
+.red_wine_route .route .map p{
+    padding-left: 70px;
+    font-size: 14px;
+    line-height: 40px;
+}
+.red_wine_route .route .map .map_france{
+    position: relative;
+}
+.red_wine_route .route .map .map_france span{
+    padding-top: 18px;
+    position: absolute;
+    line-height: 13px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    background: url("../images/red_wine/222.gif") no-repeat 50% top;
+}
+.red_wine_route .route .map .map_france span.now{
+    background: url("../images/red_wine/111.gif") no-repeat 50% top;
+}
+.red_wine_route .route .route_line .date{
+    cursor: pointer;
+    line-height: 10px;
+    min-width: 50px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    color: #000;
+    background: url("../images/red_wine/date.gif") no-repeat top center;
+}
+.red_wine_route .route .route_line .date span{
+    display: block;
+}
+.route_line .date span.month{
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+.route_line .date span.day{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+}
+.wine_city_box{
+    padding-top: 16px;
+    width: 100%;
+    background-color: #7F7463;
+}
+.wine_city{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+}
+.wine_city .city_banner{
+    width: 100%;
+    height: 340px;
+    position: relative;
+}
+.wine_city .city_banner .title_p{
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+.wine_city .city_banner .title{
+    left: 400px;
+    top: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.wine_city .city_banner .title b{
+    display: block;
+    font-weight: normal;
+    letter-spacing: 6px;
+}
+.wine_city .city_text{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+    color: #fff;
+}
+.wine_city .city_text .city_text_left{
+    width: 420px;
+    float: left;
+}
+.wine_city .city_text .city_text_right{
+    padding-right: 20px;
+    width: 720px;
+    float: right;
+    line-height: 32px;
+}
+.wine_city .city_text .city_text_right p{
+    font-size: 16px;
+    text-indent: 2em;
+
+}
+.wine_city .city_text .city_text_left ul{
+    width: 398px;
+    border: 1px solid #fff;
+    margin: 17px 0;
+    padding: 10px;
+}
+.wine_city .city_text .city_text_left ul li{
+    width: 100%;
+    overflow: hidden;
+}
+.wine_city .city_text .city_text_left ul li span{
+    float: left;
+}
+.wine_city .city_text .city_text_left ul li i{
+    float: left;
+    display: block;
+    width: 330px;
+}
+.wine_city_title{
+    width: 100%;
+    background-color: #C5C0B9;
+    text-align: center;
+    height: 130px;
+    line-height: 130px;
+
+}
+.wine_city_title h2{
+    font-size: 33px;
+    font-weight: normal;
+    color: #7F7463;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

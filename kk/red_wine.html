@@ -1,0 +1,809 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>红酒践行者</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/keke.css" rel="stylesheet" type="text/css">
+<link href="css/blue.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/album.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jx.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/red_wine.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/ttss.js"></script>
+<script src="js/map.js" ></script>
+</head>
+<body>
+<!-- 页眉 -->
+<div class="site-topbar">
+    <div class="w1200 clearfix center container">
+        <div class="fl topbar-wel"><span>欢迎来到 KK苛刻!服务电话：400-1666-085</span></div>
+        <div class="fr topbar-nav">
+            <ul class="clearfix">
+                <li class=" my_kk">
+                    <a href="#">登录</a>
+                    <dl class="">
+                        <dd><a href="#">账户</a></dd>
+                        <dd><a href="#">积分</a></dd>
+                        <dd><a href="#">消息</a></dd>
+                        <dd><a href="#">退出</a></dd>
+                    </dl>
+                </li>
+                <li class=""><a href="#">注册</a></li>
+                <li class="">
+                    <a href="#">购物车</a>
+                    <div class="topbar_car">
+                        <ul class="cart-list">
+                            <li class="clearfix">
+                                <a href="#" class="fl"><img src="images/abc/7.jpg"></a>
+                                <div class="fl">
+                                    <a href="#">禅思椅</a>
+                                    <a href="#">水曲柳/本木色</a>
+                                    <span class="clrdd0b0b">78 元</span>
+                                </div>
+                                <span class="fl close"></span>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#" class="fl"><img src="images/abc/7.jpg"></a>
+                                <div class="fl">
+                                    <a href="#">禅思椅</a>
+                                    <a href="#">水曲柳/本木色</a>
+                                    <span class="clrdd0b0b">78 元</span>
+                                </div>
+                                <span class="fl close"></span>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#" class="fl"><img src="images/abc/7.jpg"></a>
+                                <div class="fl">
+                                    <a href="#">禅思椅</a>
+                                    <a href="#">水曲柳/本木色</a>
+                                    <span class="clrdd0b0b">78 元</span>
+                                </div>
+                                <span class="fl close"></span>
+                            </li>
+                            <li class="clearfix" style="background-color:#f5f5f5;">
+                                <span id="priceCount">99.9元</span>
+                                <a href="#" id="btn_cart">购物车结算</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class=" my_kk">
+                    <a href="#">收藏夹</a>
+                    <dl class="">
+                        <dd><a href="#">我关注的</a></dd>
+                        <dd><a href="#">我收藏的</a></dd>
+                    </dl>
+                </li>
+                <li class=" my_kk">
+                    <a href="#">手机版</a>
+                    <dl class="kk_phone">
+                        <div class="kk_erweima"><img src="images/erweima.jpg"></div>
+                    </dl>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!--主导航区域-->
+<div class="nav-content">
+    <div class="w1200 center clearfix">
+        <div class="logo fl">
+            <a href="#"><img src="images/logo.jpg"></a>
+        </div>
+        <div class="kk_nav fl">
+            <ul class="clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">苛刻产品</a></li>
+                <li><a href="practitioners.html">践行者</a></li>
+                <li><a href="#">KK客</a></li>
+                <li><a href="#">苛刻百年</a></li>
+                <li><a href="#">KK课</a></li>
+            </ul>
+        </div>
+        <div class="fr">
+            <span class="kk_lang fl">苛刻,狠物质平台</span>
+            <span id="searchIcon" class="search_icon fl"></span>
+        </div>
+    </div>
+</div>
+<div class="kk_search">
+    <div class="w1200 center rel">
+        <div class="clearfix search">
+            <input type="text" class="search_txt fl"/>
+            <button class="btn_search fl">搜索</button>
+        </div>
+        <span id="searchClose" class="search_close"></span>
+
+    </div>
+</div>
+<!-- 焦点图 -->
+<div class="pra_banner">
+    <div class="w1200 center">
+        <ul>
+            <li><img src="images/map/top_1.jpg" alt=""/></li>
+        </ul>
+    </div>
+</div>
+<div class="shadow"></div>
+<!--内容-->
+<div class="pra_title">
+    <h1 class="w1200 center">MAGGIE  [苛刻欧洲红酒馆]</h1>
+</div>
+<div class="w1200 center  margin-top-40">
+    <div class="pra_intro">
+        <ul class="">
+            <li><img src="images/map/banner_1.jpg"/></li>
+            <li><img src="images/map/banner_2.jpg"/></li>
+            <li><img src="images/map/banner_3.jpg"/></li>
+        </ul>
+        <!-- <span class="prea"> < </span>
+        <span class="next"> > </span> -->
+    </div>
+
+</div>
+<div class="w1200 center  margin-top-40">
+    <!-- 红酒之路-->
+    <div class="red_wine_route">
+        <div class="country" id="country">
+            <ul>
+                <li class="on"><b></b><span>·<br>法国</span></li>
+                <li><b></b><span>·<br>德国</span></li>
+                <li><b></b><span>·<br>意大利</span></li>
+                <li><b></b><span>·<br>西班牙</span></li>
+                <li><b></b><span>·<br>葡萄牙</span></li>
+                <li><b></b><span>·<br>匈牙利</span></li>
+            </ul>
+        </div>
+        <div class="route_wrap">
+            <div class="route_box" id="route_box">
+                <div class="route" id="fance">
+                    <div class="map">
+                        <h4>Maggie的欧洲红酒践行之旅</h4>
+                        <p>法国葡萄酒产区 Wine Regions of France</p>
+                        <div class="map_france">
+                            <img src="images/map/france.jpg"/>
+                            <script>
+                                // var country = new Array();
+                                // country[0] = ['波尔多','Bordeaux',123,240];
+                                // country[1] = ['卢瓦尔河谷','Loire Valley',81,142];
+                                // country[2] = ['香槟区','Champagne',236,101];
+                                // country[3] = ['勃艮第','Burgundy',243,152];
+                                // country[4] = ['巴黎','Paris',181,89];
+                                // country[5] = ['罗纳河谷','Rhone Valley',232,266];
+                                // country[6] = ['朗格多克－鲁西荣','Languedoc-Roussillon',156,383];
+                                // country[7] = ['普罗旺斯','Provence',288,352];
+                                // country[8] = ['阿尔萨斯','Alsace',342,116];
+                                // for(var i=0;i<country.length;i++){
+                                //     var element_span = "<span style='left: "+country[i][2]+"px;top: "+country[i][3]+"px'>"+country[i][0]+"<br>"+country[i][1]+"</span>";
+                                //     $("#fance .map_france").append(element_span);
+                                // }
+
+                            </script>
+                            <span style="left: 123px;top: 240px" >波尔多<br>Bordeaux</span>
+							<span style="left: 81px;top: 142px" >卢瓦尔河谷<br>Loire Valley</span>
+							<span style="left: 236px;top: 101px">香槟区<br>Champagne</span>
+							<span style="left: 243px;top: 152px">勃艮第<br>Burgundy</span>
+							<span style="left: 181px;top: 89px" >巴黎<br>Paris</span>
+							<span style="left: 232px;top: 266px" >罗纳河谷<br>Rhone Valley</span>
+							<span style="left: 156px;top: 383px" >朗格多克－鲁西荣<br>Languedoc-Roussillon</span>
+							<span style="left: 288px;top: 352px" >普罗旺斯<br>Provence</span>
+							<span style="left: 342px;top: 116px" >阿尔萨斯<br>Alsace</span>
+                        </div>
+                        </div>
+                        <div class="route_line active">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="680px" height="500px" xml:space="preserve">
+                            <image x="0" y="0" width="680" height="500" xlink:href="images/map/boerduo.jpg" stroke="#CC0000" />
+								<path d="M91 309C91 309 116 298 133 300
+										M133 300C150 302 187 301 198 303
+										M198 303C209 305 231 306 241 308
+										M241 308C251 310 278 315 289 318
+										M289 318C300 321 353 347 365 313
+										M365 313C352 221 278 266 279 226
+										M279 226C284 209 310 201 343 194
+										M343 194C376 187 378 153 393 154
+										M393 154C408 155 440 221 462 186
+										M462 186C484 151 494 157 501 157
+										M501 157C508 157 555 189 550 233
+										M550 233C542 298 487 311 474 331
+										M474 331C461 351 468 363 471 377" fill="none" fill-opacity="0" stroke="#f00" stroke-width="2" stroke-dasharray="2,3" />
+										<circle cx="133" cy="300" r="2.5" fill="#FF0000" />
+										<circle cx="198" cy="303" r="2.5" fill="#FF0000" />
+										<circle cx="241" cy="308" r="2.5" fill="#FF0000" />
+										<circle cx="289" cy="318" r="2.5" fill="#FF0000" />
+										<circle cx="365" cy="313" r="2.5" fill="#FF0000" />
+										<circle cx="279" cy="226" r="2.5" fill="#FF0000" />
+										<circle cx="343" cy="194" r="2.5" fill="#FF0000" />
+										<circle cx="393" cy="154" r="2.5" fill="#FF0000" />
+										<circle cx="462" cy="186" r="2.5" fill="#FF0000" />
+										<circle cx="501" cy="157" r="2.5" fill="#FF0000" />
+										<circle cx="550" cy="233" r="2.5" fill="#FF0000" />
+										<circle cx="474" cy="331" r="2.5" fill="#FF0000" />
+										<path d="M54.196,128.361H8.732l53.597,70.98L8.732,270.316h45.463l53.601-70.975L54.196,128.361z" transform="matrix(0.066,0.125,-0.1,0.06,489,357)" fill="#f00" stroke="none" stroke-opacity="0" />
+							</svg>
+                            <script>
+                                // var route = new Array();
+                                // route[0] = [126,297,'April','4月','21','梅多克','Medoc'];
+                                // route[1] = [195,232,'April','4月','25','上梅多克','Hunt-Medoc'];
+                                // route[2] = [233,327,'May','5月','3','利斯塔克梅多克','Listrac-Medoc'];
+                                // route[3] = [291,249,'May','5月','7','穆利斯梅多克','Moulis-Medoc'];
+                                // route[4] = [357,268,'May','5月','11','佩萨克－雷奥良','Pessac-Leognan'];
+                                // route[5] = [255,133,'May','5月','15','布莱耶','Blaye'];
+                                // route[6] = [447,214,'May','5月','24','两海之间','Entre-deux-Mers'];
+                                // route[7] = [554,244,'May','5月','27','甜酒贵腐产区','Liquoreux'];
+                                // route[8] = [439,149,'May','5月','25','卡斯蒂永波尔多丘','Castillon Cote de Bordeaux'];
+                                // route[9] = [370,98,'May','5月','22','弗朗克波尔多丘','France Cote de Bordeaux'];
+                                // for(var j=0;j<route.length;j++){
+                                //     var element_route = "<div onclick='route_date("+j+")' class='date' style='z-index:"+(50-j)+";left: "+route[j][0]+"px;top: "+route[j][1]+"px'>";
+                                //     element_route += "<span class='month'>"+route[j][2]+" "+route[j][3]+"</span>";
+                                //     element_route += "<span class='day'>"+route[j][4]+"</span>";
+                                //     element_route += "<span>"+route[j][5]+"</span>";
+                                //     element_route += "<span>"+route[j][6]+"</span>";
+                                //     element_route += "</div>";
+                                //     $("#fance .route_line").eq(0).append(element_route);
+                                // }
+                            </script>
+	                      <div onclick="route_date(0)" class="date" style="z-index:50;left: 126px;top: 297px">
+	                            <span class="month">April 4月</span>
+	                            <span class="day">21</span>
+	                            <span>梅多克</span>
+	                            <span>Medoc</span>
+	                        </div>
+	                        <div class="date" style="z-index:49;left: 195px;top: 232px">
+		                        <span class="month">April 4月</span>
+		                        <span class="day">25</span>
+		                        <span>上梅多克</span>
+		                        <span>Hunt-Medoc</span>
+	                        </div>
+	                        <div class="date" style="z-index:48;left: 233px;top: 327px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">3</span>
+		                        <span>利斯塔克梅多克</span>
+		                        <span>Listrac-Medoc</span>
+	                        </div>
+	                        <div class="date" style="z-index:47;left: 291px;top: 249px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">7</span>
+		                        <span>穆利斯梅多克</span>
+		                        <span>Moulis-Medoc</span>
+	                        </div>
+	                        <div class="date" style="z-index:46;left: 357px;top: 268px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">11</span>
+		                        <span>佩萨克－雷奥良</span>
+		                        <span>Pessac-Leognan</span>
+	                        </div>
+	                        <div class="date" style="z-index:45;left: 255px;top: 133px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">15</span>
+		                        <span>布莱耶</span>
+		                        <span>Blaye</span>
+	                        </div>
+	                        <div class="date" style="z-index:44;left: 447px;top: 214px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">24</span>
+		                        <span>两海之间</span>
+		                        <span>Entre-deux-Mers</span>
+	                        </div>
+	                        <div class="date" style="z-index:43;left: 554px;top: 244px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">27</span>
+		                        <span>甜酒贵腐产区</span>
+		                        <span>Liquoreux</span>
+	                        </div>
+	                        <div class="date" style="z-index:42;left: 439px;top: 149px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">25</span>
+		                        <span>卡斯蒂永波尔多丘</span>
+		                        <span>Castillon Cote de Bordeaux</span>
+	                        </div>
+	                        <div class="date" style="z-index:41;left: 370px;top: 98px">
+		                        <span class="month">May 5月</span>
+		                        <span class="day">22</span>
+		                        <span>弗朗克波尔多丘</span>
+		                        <span>France Cote de Bordeaux</span>
+	                        </div>
+                        </div>
+                        <div class="route_line">
+                        <!-- <canvas width="680" height="500" id="route_canvas"></canvas> -->
+	                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="680px" height="500px" xml:space="preserve">
+								<image x="0" y="0" width="680" height="500" xlink:href="images/map/route_1.jpg" stroke="#CC0000" />
+								  <path d="M34 179C34 179 74 185 100 190
+								M100 190C188 207 194 236 279 284
+								M279 284C279 284 339 320 358 288
+								M358 288C377 256 315 211 334 194
+								M334 194C360 173 377 192 397 202
+								M397 202C417 212 479 250 496 258
+								M496 258C513 266 529 276 551 270" fill="none" fill-opacity="0" stroke="#FF0000" stroke-width="2" stroke-dasharray="2,3" />
+								<path d="
+								M358 288C377 256 315 211 334 194
+								M334 194C360 173 377 192 397 202
+								M397 202C417 212 479 250 496 258
+								M496 258C513 266 529 276 551 270" fill="none" fill-opacity="0" stroke="#666" stroke-width="2" stroke-dasharray="2,3" />
+								<path d="M54.196,128.361H8.732l53.597,70.98L8.732,270.316h45.463l53.601-70.975L54.196,128.361z" transform="matrix(0.1716062,0,0,0.1127118,539.5015,249.5322)" fill="#666" stroke="none" stroke-opacity="0" />
+							  	<circle cx="100" cy="190" r="3" fill="#FF0000" />
+								<circle cx="279" cy="284" r="3" fill="#FF0000"  />
+								<circle cx="358" cy="288" r="3" fill="#FF0000"  />
+								<circle cx="334" cy="194" r="3" fill="#666" />
+								<circle cx="397" cy="202" r="3" fill="#666"  />
+								<circle cx="496" cy="258" r="3" fill="#666" />
+							</svg>
+							<div class="date" style="z-index:50;left: 90px;top: 113px">
+								<span class="month">April 4月</span>
+								<span class="day">10</span>
+								<span>蒙哈维尔</span>
+								<span>Medoc</span>
+							</div>
+							<div class="date" style="z-index:50;left: 218px;top: 282px">
+								<span class="month">April 4月</span>
+								<span class="day">15</span>
+								<span>索西涅克</span>
+								<span>Saussignac</span>
+							</div>
+							<div class="date" style="z-index:50;left: 358px;top: 288px">
+								<span class="month">April 4月</span>
+								<span class="day">18</span>
+								<span>蒙巴兹雅克</span>
+								<span>Monbazillac</span>
+							</div>
+							<div class="date" style="z-index:50;left: 279px;top: 130px">
+								<span class="month">April 4月</span>
+								<span class="day">21</span>
+								<span>罗塞特</span>
+								<span>Rosette</span>
+							</div>
+							<div class="date" style="z-index:50;left: 415px;top: 130px">
+								<span class="month">April 4月</span>
+								<span class="day">25</span>
+								<span>佩夏蒙</span>
+								<span>Pecharmant</span>
+							</div>
+							<div class="date" style="z-index:50;left: 500px;top: 180px">
+								<span class="month">April 4月</span>
+								<span class="day">29</span>
+								<span>贝尔热拉克</span>
+								<span>Bergerac</span>
+							</div>
+                        </div>
+                
+                <div class="route">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="clearfix margin-top-30">
+    <div class="fl" id="par_news">
+        <ul class="par_news_list color_F9F5F0">
+            <li>
+                <h2>走进卢瓦尔河谷</h2>
+                <p>法国的好葡萄酒，只有土生土长的法国人门清，走在卢瓦尔河畔星星索索摇曳的灯光，微风拂面，真的醉了。</p>
+                <div id="parPhoto" class="margin-top-20 par_photo">
+                    <ul class="par_photoImgs clearfix">
+                        <li><img src="images/ajxz/3.jpg"></li>
+                    </ul>
+                    <span class="margin-top-20">4月23日 21:32来自MAGGIE的践行日记</span>
+                </div>
+
+                <div class="par_li_nav clearfix margin-top-20">
+                    <a href="#" style="padding-left: 0px;">收藏</a>
+                    <a href="#">分享（50）</a>
+                    <a href="#" style="padding-right: 15px; border: none;">点赞（100）</a>
+                </div>
+            </li>
+            <li>
+                <h2>走进卢瓦尔河谷</h2>
+                <p>法国的好葡萄酒，只有土生土长的法国人门清，走在卢瓦尔河畔星星索索摇曳的灯光，微风拂面，真的醉了。</p>
+                <div class="margin-top-20 par_photo">
+                    <ul class="par_photoImgs clearfix">
+                        <li><img src="images/ajxz/23.jpg"></li>
+                        <li><img src="images/ajxz/24.jpg"></li>
+                        <li><img src="images/ajxz/3.jpg"></li>
+                    </ul>
+                    <span class="margin-top-20">3月23日 21:32来自吴迪的践行日记</span>
+                </div>
+
+                <div class="par_li_nav clearfix margin-top-20">
+                    <a href="#" style="padding-left: 0px;">收藏</a>
+                    <a href="#">分享</a>
+                    <a href="#" style="padding-right: 15px; border: none;">点赞（12）</a>
+                </div>
+            </li>
+            <li>
+                <h2>走进卢瓦尔河谷</h2>
+                <p>法国的好葡萄酒，只有土生土长的法国人门清，走在卢瓦尔河畔星星索索摇曳的灯光，微风拂面，真的醉了。</p>
+                <div class="margin-top-20 par_photo">
+                    <ul class="par_photoImgs clearfix">
+                        <li><img src="images/ajxz/20.jpg"></li>
+                        <li><img src="images/ajxz/21.jpg"></li>
+                        <li><img src="images/ajxz/22.jpg"></li>
+                        <li><img src="images/ajxz/23.jpg"></li>
+                    </ul>
+                    <span class="margin-top-20">3月23日 21:32来自吴迪的践行日记</span>
+                </div>
+
+                <div class="par_li_nav clearfix margin-top-20">
+                    <a href="#" style="padding-left: 0px;">收藏</a>
+                    <a href="#">分享</a>
+                    <a href="#" style="padding-right: 15px; border: none;">点赞（12）</a>
+                </div>
+            </li>
+            <li>
+                <h2>走进卢瓦尔河谷</h2>
+                <p>法国的好葡萄酒，只有土生土长的法国人门清，走在卢瓦尔河畔星星索索摇曳的灯光，微风拂面，真的醉了。</p>
+                <div class="margin-top-20 par_photo">
+                    <ul class="par_photoImgs clearfix">
+                        <li><img src="images/ajxz/24.jpg"></li>
+                        <li><img src="images/ajxz/3.jpg"></li>
+                        <li><img src="images/ajxz/21.jpg"></li>
+                        <li><img src="images/ajxz/20.jpg"></li>
+                        <li><img src="images/ajxz/22.jpg"></li>
+
+
+                    </ul>
+                    <span class="margin-top-20">3月23日 21:32来自吴迪的践行日记</span>
+                </div>
+
+                <div class="par_li_nav clearfix margin-top-20">
+                    <a href="#" style="padding-left: 0px;">收藏</a>
+                    <a href="#">分享</a>
+                    <a href="#" style="padding-right: 15px; border: none;">点赞（12）</a>
+                </div>
+            </li>
+            <li>
+                <h2>走进卢瓦尔河谷</h2>
+                <p>法国的好葡萄酒，只有土生土长的法国人门清，走在卢瓦尔河畔星星索索摇曳的灯光，微风拂面，真的醉了。</p>
+                <div class="margin-top-20 par_photo">
+                    <ul class="par_photoImgs clearfix">
+                        <li><img src="images/ajxz/3.jpg"></li>
+                        <li><img src="images/ajxz/18.jpg"></li>
+                        <li><img src="images/ajxz/19.jpg"></li>
+                        <li><img src="images/ajxz/23.jpg"></li>
+                        <li><img src="images/ajxz/24.jpg"></li>
+                        <li><img src="images/ajxz/3.jpg"></li>
+
+
+                    </ul>
+                    <span class="margin-top-20">3月23日 21:32来自吴迪的践行日记</span>
+                </div>
+
+                <div class="par_li_nav clearfix margin-top-20">
+                    <a href="#" style="padding-left: 0px;">收藏</a>
+                    <a href="#">分享</a>
+                    <a href="#" style="padding-right: 15px; border: none;">点赞（12）</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="par_new_number clearfix">
+            <li class="active"><a>查看更多</a></li>
+            <!--<li><a>2</a></li>-->
+            <!--<li><a>3</a></li>-->
+            <!--<li><a>4</a></li>-->
+        </ul>
+    </div>
+    <div id="par_product" class="fr main_right">
+
+        <ul id="product_nav">
+            <li class="active"><a href="">全部</a></li>
+            <li><a href="">干红葡萄酒</a></li>
+            <li><a href="">干白葡萄酒</a></li>
+            <li><a href="">气泡葡萄酒</a></li>
+            <li><a href="">加烈葡萄酒</a></li>
+            <li><a href="">香槟</a></li>
+            <li><a href="">白兰地</a></li>
+
+        </ul>
+        <div class="main_product">
+            <dl>
+                <dt><img src="images/map/wine_1.jpg"/> </dt>
+                <dd>
+                    <span>卢瓦尔河谷产区罗塞特酒庄希拉波塞东</span>
+                    <span class="par_price">RMB 1360.00</span>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_2.jpg"/> </dt>
+                <dd>
+                    <span>卢瓦尔河谷产区罗塞特酒庄希拉波塞东</span>
+                    <span class="par_price">RMB 1360.00</span>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_3.jpg"/> </dt>
+                <dd>
+                    <span>卢瓦尔河谷产区罗塞特酒庄希拉波塞东</span>
+                    <span class="par_price">RMB 1360.00</span>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_4.jpg"/> </dt>
+                <dd>
+                    <span>卢瓦尔河谷产区罗塞特酒庄希拉波塞东</span>
+                    <span class="par_price">RMB 1360.00</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="main_product">
+            <dl>
+                <dt><img src="images/map/wine_5.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_6.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_7.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_5.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_6.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_7.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_5.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_6.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_7.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+        </div>
+        <h1 class="title margin-top-40">勃良地<hr/></h1>
+        <div class="main_product">
+            <dl>
+                <dt><img src="images/map/wine_5.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_6.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_7.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_5.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_6.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+            <dl>
+                <dt><img src="images/map/wine_7.jpg"/></dt>
+                <dd><span>热拉克产区罗塞特酒庄西拉波塞东</span><span class="par_price">RMB 360.00</span></dd>
+            </dl>
+        </div>
+
+    </div>
+</div>
+<div class="pra_title">
+    <h2><hr class="fl" style="width: 90px;margin-right: 20px;margin-top: 18px;"/>关注更多苛刻践行者<hr class="fr" style="width: 845px;margin-top: 18px;" /></h2>
+</div>
+<div id="pra_more" class="margin-top-30">
+    <ul class="clearfix">
+        <li style="margin-left: 0;">
+            <a href="#">
+                <img src="images/ajxz/8.jpg">
+                <span>Lisa的巴黎</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/ajxz/9.jpg">
+                <span>玛雅在澳洲</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/ajxz/10.jpg">
+                <span>老闫的丽江</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/ajxz/11.jpg">
+                <span>米苏里的电子梦</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/ajxz/12.jpg">
+                <span>西雅行走尼泊尔</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+
+
+<!--底部-->
+<div class="footer margin-top-80 " id="footer" style="clear: both;">
+    <div class="shadow" style="background-position: center -228px;"></div>
+    <div class="footer-container secondHeaderCenter o" style="padding-bottom:30px;">
+        <ul class=" w630 clearfix" style="width:1200px; margin:0 auto">
+
+            <li>
+                <a class="footer-container-first firstfont">新手指南 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=28" title="忘记密码"> 忘记密码 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=27" title="购买流程"> 购买流程 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=26" title="注册协议"> 注册协议 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=25" title="如何注册"> 如何注册 </a>
+            </li>
+
+            <li>
+                <a class="footer-container-first firstfont">付款方式 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=15" title="支付安全"> 支付安全 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=14" title="在线支付"> 在线支付 </a>
+            </li>
+
+            <li>
+                <a class="footer-container-first firstfont">物流配送 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=20" title="发货时间"> 发货时间 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=19" title="配送说明"> 配送说明 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=18" title="配送方式"> 配送方式 </a>
+            </li>
+
+            <li>
+                <a class="footer-container-first firstfont">售后服务 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=24" title="退货地址"> 退货地址 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=23" title="退款说明"> 退款说明 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=22" title="退换货说明"> 退换货说明 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=21" title="退换货流程"> 退换货流程 </a>
+            </li>
+
+            <li>
+                <a class="footer-container-first firstfont">关于我们 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=31" title="版权声明"> 版权声明 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=17" title="关于苛刻"> 关于苛刻 </a>
+                <a target="_blank" href="http://www.keke.top/index.html?act=article&amp;op=show&amp;article_id=16" title="联系我们"> 联系我们 </a>
+            </li>
+            <li class="daskjdhk" style="position:relative;text-align:right">
+                <img src="http://www.keke.top/platform/templates/default/images/04953645717895173.jpg" height="84px" width="84px">
+                <p>关注微信公众号</p>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+<div class="footer bg_white" style="margin-top: 0px;">
+    <div class="shadow" style="background-position: center -228px;"></div>
+    <div class=" secondHeaderCenter margin-bottom-30">
+        <div class="footer-bottom o" style="padding-top:0px;padding-bottom:10px; margin:0 auto; width:800px;">
+            <div>
+                <p>备案ID&nbsp;&nbsp;2092622&nbsp;&nbsp;|&nbsp;&nbsp;营业执照注册号&nbsp;&nbsp;370102200188301&nbsp;&nbsp;|&nbsp;&nbsp;食品流通许可证SP3701021511101287L号&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <script>
+                        var _hmt = _hmt || [];
+                        (function() {
+                            var hm = document.createElement("script");
+                            hm.src = "//hm.baidu.com/hm.js?7e638aaae4bb55a9b628da05f65783a9";
+                            var s = document.getElementsByTagName("script")[0];
+                            s.parentNode.insertBefore(hm, s);
+                        })();
+                    </script>
+                    <script src="http://s4.cnzz.com/z_stat.php?id=1257132029&amp;web_id=1257132029" language="JavaScript"></script><script src="http://c.cnzz.com/core.php?web_id=1257132029&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1257132029" target="_blank" title="站长统计">站长统计</a>
+                    <br>
+                </p><p>Copyright © 2015-2016  苛刻keke.top 版权所有</p>
+                <p></p>
+                <p style="padding-top: 20px;">
+                    <span><img src="http://www.keke.top/platform/templates/default/images/jingying.png" height="36" width="100"></span>
+                    <span><img src="http://www.keke.top/platform/templates/default/images/zhifubaoteyue.png" height="36" width="100"></span>
+                    <span><img src="http://www.keke.top/platform/templates/default/images/kexin.png" height="36" width="100"></span>
+                    <span><a href="http://www.jnmsjw.gov.cn/" target="_blank"><img src="http://www.keke.top/platform/templates/default/images/jingcha.png" height="36" width="100"></a></span>
+                    <span><img src="http://www.keke.top/platform/templates/default/images/chengxin.png" height="36" width="100"></span>
+                    <!--
+                    <span><img src="http://www.keke.top/platform/templates/default/images/jiaoyibaozhang.png" width="100" height="36"></span>
+                    <span><img src="http://www.keke.top/platform/templates/default/images/gongshang.png"  height="36"></span>
+                    -->
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回到顶部-->
+<div id="scroll">
+    <div class="scrollItem" id="toTop"></div>
+</div>
+<!--回到结束-->
+
+
+
+<div id="par_popup">
+    <!--图片特效内容开始-->
+    <div class="piccontext">
+        <!--大图展示-->
+        <div class="picshow">
+            <div class="picshowtop">
+                <a href="#"><img src="" alt="" id="pic1" curindex="0" /></a>
+                <a id="preArrow" href="javascript:void(0)" class="contextDiv" title="上一张"><span id="preArrow_A"></span></a>
+                <a id="nextArrow" href="javascript:void(0)" class="contextDiv" title="下一张"><span id="nextArrow_A"></span></a>
+            </div>
+
+            <div class="picshowlist">
+
+                <div class="picshowlist_mid">
+                    <div class="picmidleft"> <a href="javascript:void(0)" id="preArrow_B"><img src="images/left1.jpg" alt="上一个" /></a> </div>
+                    <div class="picmidmid">
+                        <ul>
+                            <li> <a href="javascript:void(0);"><img src="images/1.jpg" alt="" bigimg="images/1.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/2.jpg" alt="" bigimg="images/2.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/3.jpg" alt="" bigimg="images/3.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/4.jpg" alt="" bigimg="images/4.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/5.jpg" alt="" bigimg="images/5.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/6.jpg" alt="" bigimg="images/6.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/7.jpg" alt="" bigimg="images/7.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/8.jpg" alt="" bigimg="images/8.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/9.jpg" alt="" bigimg="images/9.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/10.jpg" alt="" bigimg="images/10.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/11.jpg" alt="" bigimg="images/11.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                            <li> <a href="javascript:void(0);"><img src="images/12.jpg" alt="" bigimg="images/12.jpg" text="《古剑》小师妹迪丽热巴清新写真宛若小仙女" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="picmidright"> <a href="javascript:void(0)" id="nextArrow_B"><img src="images/right1.jpg" alt="下一个" /></a> </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <span class="pra-close"></span>
+</div>
+</div>
+<script>
+    $(function(){
+
+        var length=$(".par_photoImgs").length;
+        for(var i=0;i<length;i++)
+        {
+            var this_ptImg=$(".par_photoImgs").eq(i);
+            var par_pt_length = $(".par_photoImgs").eq(i).children("li").length;
+            if(par_pt_length==1){
+                this_ptImg.children("li").eq(0).css({"width":"280px","height":"200px","overflow":"hidden"}).children("img").css({"height":"200px"});
+            }
+            if(par_pt_length==2||par_pt_length==4){
+                this_ptImg.css({"width":"290px"})
+                this_ptImg.children("li").css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"205px"});
+            }
+            if(par_pt_length==3){
+                this_ptImg.css({"width":"290px"})
+                this_ptImg.children("li").eq(0).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"205px","overflow":"hidden"}).children("img").css({"height":"205px"});
+                this_ptImg.children("li").eq(1).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"200px"});
+                this_ptImg.children("li").eq(2).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"200px"});
+            }
+            if(par_pt_length==5){
+                this_ptImg.css({"width":"440px"})
+                this_ptImg.children("li").eq(0).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"205px","overflow":"hidden"}).children("img").css({"height":"300px"});
+                this_ptImg.children("li").eq(1).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"200px"});
+                this_ptImg.children("li").eq(2).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"200px"});
+                this_ptImg.children("li").eq(3).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"200px"});
+                this_ptImg.children("li").eq(4).css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"200px"});
+            }
+            if(par_pt_length>5){
+                this_ptImg.css({"width":"440px"})
+                this_ptImg.children("li").css({"float":"left","margin-right":"5px","margin-bottom":"5px","width":"140px","height":"100px","overflow":"hidden"}).children("img").css({"height":"100px"});
+            }
+        }
+    })
+</script>
+</body>
+</html>

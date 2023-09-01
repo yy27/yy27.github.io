@@ -1,0 +1,227 @@
+
+/*用户名 会员级别*/
+.us-box .us-box-r .us_level_box{
+	margin: 45px auto;
+	margin-left: 42px;
+}
+.us_level{
+	padding: 0;
+	background: #fff;
+	padding: 25px 40px 0 40px;
+}
+.us-photo-108{
+
+	width: 205px;
+	padding: 24px 0 0 15px;
+}
+
+.us-photo-108 img{
+	width: 108px;
+	height: 108px;
+}
+.us_level_t{
+	width: 320px;
+	overflow: hidden;
+}
+.us_level_t h3 span,.us_level_t h3 a,.user_c_close,.us_level_icon ul li span,.us_level_line,.us_center_t,.level_slider .slider,.level_slider .slider i{
+	background-image: url("../images/user_center/person_c_icon.png");
+	background-repeat: no-repeat;
+}
+.us_level_t h3 span{
+	float: left;
+	font-size: 16px;
+	color: #595757;
+	padding-left: 10px;
+	background-position: 0 6px;
+}
+.us_level_t h3{
+	height: 60px;
+	overflow: hidden;
+}
+.us_level_t h3 a{
+	cursor: pointer;
+	color: #2ea7ed;
+	padding-left: 20px;
+	background-position:-98px 7px;
+	float: right;
+}
+.us_level_t li{
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #959595;
+	border-bottom: 1px solid #eee;
+}
+.us_level_t li span{
+	font-size: 14px;
+	padding-right: 30px;
+	color: #646464;
+}
+.us_overlap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background: #231915;
+	display: none;
+	opacity: 0.2;
+	z-index: 20;
+}
+.us_overlap .us_level{
+	width: 700px;
+	background: #fff;
+}
+.p_relative{
+	position: relative;
+}
+.p_absolute{
+	position: absolute;
+}
+.us_level{
+	z-index: 10;
+}
+.us_level_edit{
+	width: 680px;
+	z-index: 30;
+	display: none;
+}
+.edit_btn_box{
+	width: 100%;
+}
+.edit_btn{
+	width: 180px;
+	height: 50px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.edit_btn input{
+	border: none;
+	border: 1px solid #B3B3B3;
+	padding: 5px 20px;
+	font-size: 14px;
+	background: #fff;
+	margin: 10px;
+	cursor: pointer;
+}
+.us_level_edit .us_level_t{
+	width: 460px;
+}
+.us_level_edit .us_level_t li{
+	border: none;
+}
+.us_level_edit .us_level_t li .text{
+	width: 250px;
+	height: 35px;
+	border:1px solid #bbb;
+	padding-left: 10px;
+	line-height: 35px;
+	color: #666;
+}
+.us_level_edit .us_level_t li select{
+	border:1px solid #bbb;
+	color: #666;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.us_level_edit .us_level_t li .sex{
+	margin-right: 20px;
+}
+.us_level_edit .us_level_t li .sex input{
+	margin-right: 8px;
+}
+.user_c_close{
+	float:right;
+	background-position: -171px 0px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+/*会员等级*/
+.level_wrap{
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #959595;
+}
+.level_content{
+	width: 530px;
+}
+.us_level_icon ul{
+	height: 90px;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+.us_level_icon ul li{
+	text-align: center;
+	float: left;
+}
+.us_level_icon ul li span{
+	display: block;
+	width: 52px;
+	height: 46px;
+	background-position: 0 -30px;
+}
+.us_level_icon ul li b{
+	display: block;
+	padding-top: 20px;
+}
+.us_level_line{
+	width: 105px;
+	height: 50px;
+	background-position: -230px -32px;
+}
+.us_center_t{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	background-position: -498px 15px;
+	font-size: 14px;
+	color: #595757;
+}
+p.level_text{
+	font-size: 12px;
+	color: #959595;
+	line-height: 18px;
+}
+.level_now .us_center_t{
+	padding: 40px 0;
+	background: none;
+	text-align: center;
+}
+.level_now .level_text{
+	padding: 0 80px;
+}
+.level_slider .slider{
+	position: relative;
+	margin: 0 15px;
+	width: 500px;
+	height: 80px;
+	background-position: 0 -87px;
+}
+.level_slider ul{
+	padding-left: 85px;
+	padding-top: 70px;
+}
+.level_slider .slider i.arrow{
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	left: 0%;
+	top: 0;
+	background-position: -346px -43px;
+}
+.level_slider .slider i.line{
+	display: block;
+	width: 0%;
+	height: 40px;
+	background-position: 0 -148px;
+}
+.level_slider .slider strong{
+	color: #595757;
+}
